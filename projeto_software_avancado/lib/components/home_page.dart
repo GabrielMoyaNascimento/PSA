@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_software_avancado/components/cpf_form.dart';
 
 class HomePage extends StatelessWidget{
 
@@ -6,33 +7,12 @@ class HomePage extends StatelessWidget{
   const HomePage({this.key}) : super(key:key);
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Primeira Página')),
-      body: Center(child: Column(children: [
-        const TextField(
-          decoration: InputDecoration(
-            label: Text('CPF'),
-            hintText: 'Informe o CPF'
-          ),
-        ),
-        ElevatedButton(
-          onPressed:() {
-            showDialog(
-              context: context, 
-              builder: (BuildContext context){
-                return const AlertDialog(
-                  title: Text('Resultado'),
-                  content: Text('CPF Correto'),
-                );
-              }
-            );
-        },
-            child: const Text('Ok')
-            )
-          ],
-        ),
+      appBar: AppBar(
+        title: Text('Primeira Página'),
       ),
+      body: CpfForm()
     );
   }
 }
