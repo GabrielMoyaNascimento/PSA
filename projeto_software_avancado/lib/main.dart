@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_software_avancado/inicializer.dart';
+import 'package:projeto_software_avancado/initializer.dart';
 /*
  O que pode ser melhorado no projeto?
  1 - Excesso de comentários
@@ -12,5 +12,5 @@ import 'package:projeto_software_avancado/inicializer.dart';
  8 - 
 */
 void main() {
-  runApp(const Inicializer());
+  runApp(const Initializer());
 }

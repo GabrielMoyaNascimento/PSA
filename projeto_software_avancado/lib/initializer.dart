@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_software_avancado/components/home_page.dart';
 
-class Inicializer extends StatelessWidget {
-  const Inicializer({super.key});
+class Initializer extends StatelessWidget {
+  const Initializer({super.key});
 
   @override
   Widget build(BuildContext context) {

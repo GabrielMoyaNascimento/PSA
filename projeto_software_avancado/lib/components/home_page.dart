@@ -10,9 +10,9 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Primeira Página'),
+        title: const Text('Primeira Página'),
       ),
-      body: CpfForm()
+      body: const CpfForm()
     );
   }
 }
